@@ -28,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="91.304347826086968"/>
+            <point key="canvasLocation" x="-386" y="41"/>
         </scene>
         <!--ChannelVC-->
         <scene sceneID="8yo-PJ-sVc">
@@ -153,7 +153,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Set-gz-oQK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Set-gz-oQK" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -164,6 +164,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xie-Km-9ZB">
                                 <rect key="frame" x="88" y="336" width="199" height="26"/>
@@ -247,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="198-JL-bpf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="-269"/>
+            <point key="canvasLocation" x="1226" y="-269"/>
         </scene>
         <!--Create AccountVC-->
         <scene sceneID="oVE-MB-c2E">
@@ -271,7 +276,7 @@
                                     <action selector="closedPressed:" destination="XHR-kB-B6e" eventType="touchUpInside" id="uEw-gc-X6k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woa-Lw-SxR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woa-Lw-SxR" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -282,6 +287,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="XHR-kB-B6e" eventType="touchUpInside" id="uBT-Km-UbW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUp-dd-3hA">
                                 <rect key="frame" x="137" y="299" width="100" height="130"/>
@@ -294,6 +307,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="M6C-TU-x0J" eventType="touchUpInside" id="36c-t7-UKW"/>
+                                    <action selector="pickAvatarPressed:" destination="XHR-kB-B6e" eventType="touchUpInside" id="sXg-Gk-Gg2"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-OE-MlZ">
@@ -371,6 +385,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="M6C-TU-x0J" eventType="touchUpInside" id="Xnp-o0-Hyw"/>
+                                    <action selector="pickBGColorPressed:" destination="XHR-kB-B6e" eventType="touchUpInside" id="QVh-vn-MDF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -395,13 +410,17 @@
                         <viewLayoutGuide key="safeArea" id="ZVh-CH-kvh"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="eC6-4v-hgB" id="AUW-zf-QnB"/>
+                        <outlet property="passTxt" destination="of1-zA-qXm" id="ZZX-bQ-4g5"/>
+                        <outlet property="userImg" destination="3gk-54-uRY" id="Agc-PI-buo"/>
+                        <outlet property="userNameTxt" destination="j39-sg-gQu" id="f3C-4i-QHp"/>
                         <segue destination="9Z1-NX-L71" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="P4e-Fj-o6c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuJ-jh-3ey" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="9Z1-NX-L71" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2096.8000000000002" y="-269.41529235382313"/>
+            <point key="canvasLocation" x="1906" y="-269"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="fGK-gk-enf">
