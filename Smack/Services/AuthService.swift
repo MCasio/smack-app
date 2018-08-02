@@ -110,7 +110,7 @@ class AuthService {
         ]
         
         let header = [
-            "Authorization": "Bearer\(AuthService.instance.authToken)",
+            "Authorization": "Bearer \(AuthService.instance.authToken)",
             "Content-Type": "application/json; charset=utf-8"
         ]
         
