@@ -29,6 +29,9 @@
 		C6B0339E210D425500511527 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B0339D210D425500511527 /* AuthService.swift */; };
 		C6C21ABC2115945A007C69C2 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C21ABB2115945A007C69C2 /* MessageService.swift */; };
 		C6C21ABE2115A1D5007C69C2 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C21ABD2115A1D5007C69C2 /* Channel.swift */; };
+		C6C21AC02115B412007C69C2 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C21ABF2115B412007C69C2 /* ChannelCell.swift */; };
+		C6C21AC32115B9B2007C69C2 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C21AC12115B9B2007C69C2 /* AddChannelVC.swift */; };
+		C6C21AC42115B9B2007C69C2 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C21AC22115B9B2007C69C2 /* AddChannelVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		C6B0339D210D425500511527 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C6C21ABB2115945A007C69C2 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		C6C21ABD2115A1D5007C69C2 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		C6C21ABF2115B412007C69C2 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		C6C21AC12115B9B2007C69C2 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
+		C6C21AC22115B9B2007C69C2 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		DF5A9A9780360752BDAFCD7F /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,7 @@
 				1E8FDE7B210B10340003C6AA /* CreateAccountVC.swift */,
 				C634627D21120AD500E40200 /* AvatarPickerVC.swift */,
 				C6A4B8862113386100F23BBF /* ProfileVC.swift */,
+				C6C21AC12115B9B2007C69C2 /* AddChannelVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,6 +111,7 @@
 				C6513AE1210D60F400D8FF7B /* RoundedButton.swift */,
 				C634627F21120E0C00E40200 /* AvatarCell.swift */,
 				C69356F72112A1DC00F3A768 /* CircleImage.swift */,
+				C6C21ABF2115B412007C69C2 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				C6A4B8872113386100F23BBF /* ProfileVC.xib */,
+				C6C21AC22115B9B2007C69C2 /* AddChannelVC.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C21AC42115B9B2007C69C2 /* AddChannelVC.xib in Resources */,
 				C6A4B8892113386100F23BBF /* ProfileVC.xib in Resources */,
 				1E522F902108C3D700A32FB4 /* LaunchScreen.storyboard in Resources */,
 				1E522F8D2108C3D700A32FB4 /* Assets.xcassets in Resources */,
@@ -317,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6A4B8882113386100F23BBF /* ProfileVC.swift in Sources */,
+				C6C21AC02115B412007C69C2 /* ChannelCell.swift in Sources */,
 				1E25CF21210959D3006189A1 /* ChannelVC.swift in Sources */,
 				C634627E21120AD500E40200 /* AvatarPickerVC.swift in Sources */,
 				C6513AE2210D60F400D8FF7B /* RoundedButton.swift in Sources */,
@@ -328,6 +339,7 @@
 				1E8FDE7C210B10340003C6AA /* CreateAccountVC.swift in Sources */,
 				C6B0339E210D425500511527 /* AuthService.swift in Sources */,
 				1E8FDE7A210B06B90003C6AA /* LoginVC.swift in Sources */,
+				C6C21AC32115B9B2007C69C2 /* AddChannelVC.swift in Sources */,
 				1E8F62372109724D00D99D0B /* GradientView.swift in Sources */,
 				C634628021120E0C00E40200 /* AvatarCell.swift in Sources */,
 				1E522F862108C3D500A32FB4 /* AppDelegate.swift in Sources */,

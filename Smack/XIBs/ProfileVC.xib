@@ -25,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkX-jB-lTe" userLabel="bgView">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-6d-Y95">
@@ -95,7 +95,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="LkX-jB-lTe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="97I-OY-4OK"/>
-                <constraint firstItem="LkX-jB-lTe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AfF-nX-QGw"/>
+                <constraint firstItem="LkX-jB-lTe" firstAttribute="top" secondItem="cbd-6d-Y95" secondAttribute="top" constant="-153" id="AfF-nX-QGw"/>
                 <constraint firstItem="cbd-6d-Y95" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FP6-of-GC9"/>
                 <constraint firstItem="cbd-6d-Y95" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Hdu-k7-dVX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LkX-jB-lTe" secondAttribute="trailing" id="Lja-1q-OyH"/>
