@@ -32,6 +32,7 @@
 		C6C21AC02115B412007C69C2 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C21ABF2115B412007C69C2 /* ChannelCell.swift */; };
 		C6C21AC32115B9B2007C69C2 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C21AC12115B9B2007C69C2 /* AddChannelVC.swift */; };
 		C6C21AC42115B9B2007C69C2 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6C21AC22115B9B2007C69C2 /* AddChannelVC.xib */; };
+		C6FF8ECB2115F11D007E93CE /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FF8ECA2115F11D007E93CE /* SocketService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		C6C21ABF2115B412007C69C2 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		C6C21AC12115B9B2007C69C2 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		C6C21AC22115B9B2007C69C2 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		C6FF8ECA2115F11D007E93CE /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		DF5A9A9780360752BDAFCD7F /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +203,7 @@
 				C6B0339D210D425500511527 /* AuthService.swift */,
 				C65559CC2111D59500EFFCAE /* UserDataService.swift */,
 				C6C21ABB2115945A007C69C2 /* MessageService.swift */,
+				C6FF8ECA2115F11D007E93CE /* SocketService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FF8ECB2115F11D007E93CE /* SocketService.swift in Sources */,
 				C6A4B8882113386100F23BBF /* ProfileVC.swift in Sources */,
 				C6C21AC02115B412007C69C2 /* ChannelCell.swift in Sources */,
 				1E25CF21210959D3006189A1 /* ChannelVC.swift in Sources */,
